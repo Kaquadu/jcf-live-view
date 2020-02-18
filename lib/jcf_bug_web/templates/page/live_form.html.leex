@@ -1,0 +1,10 @@
+<section class="jcf-replace">
+  <%= form_for @changeset, "", [id: "search-form", phx_hook: "FormHook", phx_submit: "search"], fn f -> %>
+
+  <%= label f, :choose %>
+  <%= select f, :option, ["a", "b", "c", "d"]  %>
+
+  <%= submit "Update" %>
+
+  <% end %>
+</section>
